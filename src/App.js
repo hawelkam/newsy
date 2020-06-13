@@ -10,6 +10,10 @@ import Trending from "./pages/Tabs/Trending"
 import Search from "./pages/Tabs/Search"
 import Submit from "./pages/Tabs/Submit"
 import Profile from "./pages/Tabs/Profile"
+import EditProfile from "./pages/Auth/EditProfile"
+import Forgot from "./pages/Auth/Forgot"
+import Login from "./pages/Auth/Login"
+import Signup from "./pages/Auth/Signup"
 
 
 /* Core CSS required for Ionic components to work properly */
@@ -42,6 +46,10 @@ const App = () => (
           <Route exact path="/submit" component={Submit}></Route>
           <Route exact path="/search" component={Search}></Route>
           <Route exact path="/profile" component={Profile}></Route>
+          <Route exact path="/edit-profile" component={EditProfile}></Route>
+          <Route exact path="/register" component={Signup}></Route>
+          <Route exact path="/login" component={Login}></Route>
+          <Route exact path="/forgot" component={Forgot}></Route>
           <Route component={() =><Redirect to="/news" />} />
         </IonRouterOutlet>
         <IonTabBar slot="bottom">
