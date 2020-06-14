@@ -8,7 +8,7 @@ class Firebase {
     constructor() {
         app.initializeApp(firebaseConfig)
         this.app = app
-        this.auth= this.auth()
+        this.auth= app.auth()
         this.db = app.firestore()
     }
 
@@ -26,7 +26,7 @@ class Firebase {
     }
 
     resetPassword(email) {
-        return this.auth.senPasswordResetEmail(email)
+        return this.auth.sendPasswordResetEmail(email)
     }
 }
 
