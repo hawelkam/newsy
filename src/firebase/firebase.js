@@ -22,7 +22,7 @@ class Firebase {
     }
 
     logout() {
-        return this.auth.sighnOut()
+        return this.auth.signOut()
     }
 
     resetPassword(email) {
