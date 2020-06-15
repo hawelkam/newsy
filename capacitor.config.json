@@ -1,5 +1,5 @@
 {
-  "appId": "io.ionic.starter",
+  "appId": "pl.michalhawelka.newsy",
   "appName": "Newsy",
   "bundledWebRuntime": false,
   "npmClient": "npm",
